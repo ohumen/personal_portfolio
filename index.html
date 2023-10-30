@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+
+    <title>My Portfolio</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body> 
+    <nav id="desktop-nav">
+        <div class="logo">O.Humen</div>
+        <div class="mode-links">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">O.H.</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profile" id="profile">
+        <div class="section-profile grid">
+            <div class="section-text">
+                <p class="section-text-p1">Hello, I'm Olha Humen</p>
+                <h1 class="title">Front-End/UI-UX Web Developer</h1>
+                <p class="section-text-p2">Highly motivated graduate with a bachelor’s degree in Computer Science 
+                and valuable apprenticeship experience, seeking a challenging position</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/MyResume.pdf')">Download Resume</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Budw%2FgzlIRRG5jvYuJWNRJQ%3D%3D'">
+                    <img src="./assets/github.png " alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/ohumen'">
+                </div>
+            </div>
+            <div class="section-pic-container pic"></div>
+            <div class="section-blob-container blob">+</div>
+            <div class="section-blob-container-2 blob">+</div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-slider right-to-left">
+            <p>about + About + <em>about</em> + ABOUT + <strong>about</strong> + about + About + <em>about</em> + ABOUT + <strong>about</strong></p>
+        </div>
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-about grid">
+            <div class="section-pic-container-2 pic"></div>
+            <div class="section-blob-container-3 blob">+</div>
+            <div class="section-blob-container-4 blob">+</div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <h3 class="details-title">Little About Me</h3>
+                    <p class="about-me">Highly motivated <strong>Front-End/UI-UX Web Developer</strong> with a <strong>bachelor’s degree in Computer Science</strong>
+                    and valuable apprenticeship experience, seeking a challenging position to utilize technical 
+                    expertise and contribute to the development of cutting-edge and innovative user interfaces 
+                    and engaging web applications. Committed to delivering exceptional user experiences through 
+                    responsive code, clean, efficient, and visually appealing interfaces while staying abreast 
+                    of emerging technologies and industry trends. </p>
+                </div>
+                <div class="about-containers">
+                    <h3 class="details-title">Education</h3>
+                    <div class="details-context">
+                        <p class="years">09.2018 – 06.2023</p>
+                        <p class="context">Taras Shevchenko National University of Kyiv – Kyiv, Ukraine – Bachelor of Science, Computer Science.</p>
+                    </div>
+                </div>
+                <div class="about-containers">
+                    <h3 class="details-title">Apprenticeship Experience</h3>
+                    <div class="details-context">
+                        <p class="years">01.2022 – 04.2022</p>
+                        <p class="context">HARWIND – Kyiv, Ukraine <br> Collaborated with a team of developers to create a new page for an existing web application.</p>
+                    </div>
+                    <div class="details-context">
+                        <p class="years">01.2023 – 04.2023</p>
+                        <p class="context">INDASTRIAL GLASS SOLUTION – Kyiv, Ukraine <br> Responsible for maintaining and enhancing an already existing web application.</p>
+                    </div>
+                </div>     
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="experience-slider right-to-left">
+            <p>experience + Experience + <em>experience</em> + EXPERIENCE + <strong>experience</strong> + experience + Experience + <em>experience</em> + EXPERIENCE + <strong>experience</strong></p>
+        </div>
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers-2">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Front End Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>React JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Back End Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">UI-UX Web Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Spline</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Sketch</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Photoshop</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-slider right-to-left">
+            <p>projects + Projects + <em>projects</em> + PROJECTS + <strong>projects</strong> + projects + Projects + <em>projects</em> + PROJECTS + <strong>projects</strong></p>
+        </div>
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Personal Projects</h1>
+        <div class="experience-details-containers">
+            <div class="projects-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Flower Shop</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ohumen/flower_shop'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ohumen.github.io/flower_shop/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Desktop App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ohumen/desktop_application'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ohumen.github.io/desktop_application/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Error Window</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ohumen/page_not_found'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ohumen.github.io/page_not_found/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-slider right-to-left">
+            <p>contact + Contact + <em>contact</em> + CONTACT + <strong>contact</strong> + contact + Contact + <em>contact</em> + CONTACT + <strong>contact</strong></p>
+        </div>
+        <p class="section-text-p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="section-contact">
+            <div class="contact-icons-flex">
+                <div class="contact-icons">
+                    <img src="./assets/phone.png" alt="Phone Icon" class="icon ">
+                    <div>
+                        <h3 class="contact-title">Call Me</h3>
+                        <p>908-297-5528</p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <img src="./assets/email.png" alt="Email Icon" class="icon ">
+                    <div>
+                        <h3 class="contact-title">Email Me</h3>
+                        <p>olya.humen@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <img src="./assets/map.png" alt="Map Icon" class="icon ">
+                    <div>
+                        <h3 class="contact-title">Location</h3>
+                        <p>USA - NJ - Linden</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-information">
+                <form action="https://formsubmit.co/olya.humen@gmail.com" method="POST">
+                    <div class="row">
+						<input type="text" name="contact-input" placeholder="First Name" required>
+                        <input type="text" name="contact-input" placeholder="Last Name" required>
+					</div>
+					<div class="row">
+						<input type="text" name="contact-input" placeholder="Phone" required>
+                        <input type="email" name="contact-input" placeholder="Email" required>
+					</div>
+					<div class="row">
+						<textarea name="contact-message" id="contact-input textarea" cols="30" rows="10" placeholder="Message" required></textarea>
+					</div>
+					<div>
+						<button class="btn btn-color-1" type="submit">Send Message</button>
+						<p class="muted"><em>All fields are required. I'll get back to you as soon as possible.</em></p>
+					</div>
+                </form>   
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Olha Humen. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
